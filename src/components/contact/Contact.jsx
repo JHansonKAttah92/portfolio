@@ -2,7 +2,7 @@
 
 function Contact() {
     return (
-        <div className="contact">
+        <div id="contact" className="contact">
 
         </div>
     )
