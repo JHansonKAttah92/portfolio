@@ -2,7 +2,7 @@
 
 function Skills() {
     return (
-        <div className="skills">
+        <div id="skills" className="skills">
 
         </div>
     )

@@ -1,10 +1,5 @@
 import "./Navbar.css";
-import Hero from "../hero/Hero";
-import About from "../about/About";
-import Skills from "../skills/Skills";
-import Projects from "../projects/Projects";
-import Contact from "../contact/Contact";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, NavLink } from "react-router-dom";
 //import { useState } from "react";
 import { MenuIcon } from "lucide-react";
 
@@ -69,14 +64,7 @@ function Navbar() {
           </a>
         </div>
       </nav>
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
   );
 }
 
