@@ -1,6 +1,7 @@
 div#hero {
   width: 100%;
-  padding: 2em 0.8em;
+  padding: 2em 0.8em 5em 0.8em;
+  border-bottom: 1px solid var(--accent);
 }
 
 div.hero-content {

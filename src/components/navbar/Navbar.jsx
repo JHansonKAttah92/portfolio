@@ -1,19 +1,9 @@
-import "./Navbar.css";
-import Hero from "../hero/Hero";
-import About from "../about/About";
-import Skills from "../skills/Skills";
-import Projects from "../projects/Projects";
-import Contact from "../contact/Contact";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 //import { useState } from "react";
+import "./Navbar.css";
 import { MenuIcon } from "lucide-react";
 
 function Navbar() {
-  // const [display, setDisplay] = useState(false);
 
-  // const handleNavbarDisplay = () => {
-  //   setDisplay((prev) => !prev);
-  // };
 
   function scrollToSection(id) {
     const navbarLink = document.getElementById(id);
@@ -23,13 +13,12 @@ function Navbar() {
   }
 
   return (
-    <BrowserRouter>
       <nav className="navbar">
         <div className="nav-container">
           <h2 className="nav-logo">
-            <NavLink to="/" className="logo-link" onClick={() => scrollToSection('hero')}>
+            <a href="#hero" className="logo-link" onClick={() => scrollToSection('hero')}>
               Hanson.Dev
-            </NavLink>
+            </a>
           </h2>
           <MenuIcon
             className="menuIcon"
@@ -39,24 +28,24 @@ function Navbar() {
           />
           <ul className="nav-menu">
             <li className="nav-item">
-              <NavLink to="/about" className="nav-link" onClick={() => scrollToSection('about')}>
+              <a href="#about" className="nav-link" onClick={() => scrollToSection('about')}>
                 About
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink to="/skills" className="nav-link" onClick={() => scrollToSection('skills')}>
+              <a href="#skills" className="nav-link" onClick={() => scrollToSection('skills')}>
                 Skills
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink to="/projects" className="nav-link" onClick={() => scrollToSection('projects')}>
+              <a href="#projects" className="nav-link" onClick={() => scrollToSection('projects')}>
                 Projects
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink to="/contact" className="nav-link" onClick={() => scrollToSection('contact')}>
+              <a href="#contact" className="nav-link" onClick={() => scrollToSection('contact')}>
                 Contact
-              </NavLink>
+              </a>
             </li>
           </ul>
           <a
@@ -69,14 +58,6 @@ function Navbar() {
           </a>
         </div>
       </nav>
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,66 @@
+div#about {
+  width: 100%;
+  padding: 3.8em 0.8em;
+  border-bottom: 1px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+div#about span {
+  font-size: 1.2em;
+  color: var(--accent);
+  place-self: flex-start;
+}
+
+div#about div.about-content {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+.about-content .profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+div.about-info {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+}
+
+div.about-info h2 {
+  place-self: flex-start;
+  font-size: 2em;
+  color: var(--p-text);
+}
+
+div.about-info p {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+div.about-info ul {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+  transform: translateX(-4.5%);
+}
+
+div.about-info li {
+  list-style: none;
+  font-size: 1.4em;
+}
+
+div.about-info a {
+  text-decoration: none;
+  color: var(--p-text);
+}
+
+div.about-info img {
+  width: 20px;
+  height: 20px;
+}
