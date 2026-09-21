@@ -1,0 +1,65 @@
+div#contact {
+    display: flex;
+    flex-direction: column;
+    place-items: flex-start;
+    padding: 0 0.8em;
+    margin-top: 5em;
+}
+
+div#contact span {
+    color: var(--accent);
+}
+
+.contact-content h2 {
+    text-align: left;
+}
+
+.contact-content p {
+    text-align: left;
+}
+
+.contact-content .action {
+    display: grid;
+    gap: 0.2em;
+    grid-template-areas: 'name email'
+    'textarea textarea'
+    'btn btn';
+}
+
+.action .name {
+    grid-area: name;
+    padding: 0.4em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.action .email {
+    grid-area: email;
+    padding: 0.4em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.action .textarea {
+    grid-area: textarea;
+    padding: 0.4em;
+    height: 5em;
+    resize: vertical;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.action .btn {
+    grid-area: btn;
+    padding: 0.8em;
+    width: 20em;
+    border: none;
+    border-radius: 0.4em;
+    place-self: center;
+    background-color: var(--accent);
+}
+
+.action .btn:hover {
+    background-color: #1e40af;
+    cursor: pointer;
+}

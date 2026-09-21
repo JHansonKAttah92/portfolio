@@ -4,6 +4,7 @@ div#projects {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+  margin-top: 5em;
   padding: 1em 0.8em;
 }
 
@@ -35,6 +36,13 @@ div#projects .projects-content {
 .buttons button {
     width: 100px;
     padding: 0.3em;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 0.4em;
+}
+
+.buttons button:hover {
+    background-color: #1e40af;
 }
 
 .projects-content .project-cards {

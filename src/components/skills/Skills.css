@@ -1,7 +1,7 @@
 div#skills {
   width: 100%;
-  height: 80vh;
-  padding: 2.2em 0.8em 0 0.8em;
+  margin-top: 5em;
+  padding: 0 0.8em;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -10,16 +10,6 @@ div#skills {
 
 div#skills span {
   color: var(--accent);
-  margin-bottom: 1.2em;
-}
-
-div#skills .skills-content {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .skills-content .skill-cards {
