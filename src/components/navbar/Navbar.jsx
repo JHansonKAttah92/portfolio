@@ -54,7 +54,7 @@ function Navbar() {
             className="resume"
             rel="noopener noreferrer"
           >
-            Resume
+            My resume
           </a>
         </div>
       </nav>

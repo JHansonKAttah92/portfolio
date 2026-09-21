@@ -1,8 +1,9 @@
 div#about {
   width: 100%;
-  padding: 3.8em 0.8em;
-  border-bottom: 1px solid var(--accent);
+  height: 80vh;
+  padding: 0 0.8em;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 2em;
 }
@@ -14,7 +15,7 @@ div#about span {
 }
 
 div#about div.about-content {
-  width: 75%;
+  width: 85%;
   display: flex;
   align-items: center;
   gap: 3em;
@@ -40,7 +41,6 @@ div.about-info h2 {
 
 div.about-info p {
   text-align: left;
-  font-size: 1.2em;
 }
 
 div.about-info ul {

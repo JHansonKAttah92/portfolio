@@ -14,38 +14,6 @@ function Hero() {
           <button>View work</button>
           <button>Contact me</button>
         </div>
-        <div className="selected-projects">
-          <span>Selected Projects</span>
-          <div className="project-cards">
-            <div className="project-card">
-              <img src="https://via.placeholder.com/150" alt="Project 1" />
-              <div className="project-info">
-                <h2>Project 1</h2>
-                <p>A brief description of Project 1.</p>
-                <span className="project-stack">React</span>
-                <span className="project-stack">Node</span>
-              </div>
-            </div>
-            <div className="project-card">
-              <img src="https://via.placeholder.com/150" alt="Project 2" />
-              <div className="project-info">
-                <h2>Project 2</h2>
-                <p>A brief description of Project 2.</p>
-                <span className="project-stack">React</span>
-                <span className="project-stack">Express</span>
-              </div>
-            </div>
-            <div className="project-card">
-              <img src="https://via.placeholder.com/150" alt="Project 3" />
-              <div className="project-info">
-                <h2>Project 3</h2>
-                <p>A brief description of Project 3.</p>
-                <span className="project-stack">Vue</span>
-                <span className="project-stack">Node</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

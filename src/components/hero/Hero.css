@@ -1,17 +1,20 @@
 div#hero {
   width: 100%;
-  padding: 2em 0.8em 5em 0.8em;
-  border-bottom: 1px solid var(--accent);
+  height: 100vh;
+  padding: 0 0.8em;
 }
 
 div.hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-content span {
-  font-size: 1.2em;
   color: var(--accent);
   place-self: flex-start;
 }
@@ -24,7 +27,6 @@ div.hero-content {
 }
 
 .hero-content p {
-  font-size: 1.2em;
   color: var(--s-text);
   text-align: left;
   align-self: flex-start;
@@ -56,43 +58,4 @@ div.hero-content {
   gap: 0.2em;
   margin-top: 1em;
   place-self: flex-start;
-}
-
-.selected-projects {
-  margin-top: 2em;
-  font-size: 1em;
-  display: flex;
-  flex-direction: column;
-  color: var(--accent);
-  place-self: flex-start;
-}
-
-.selected-projects span {
-  margin-bottom: 1em;
-}
-
-.selected-projects .project-cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
-}
-
-.project-cards .project-card {
-  height: 400px;
-  padding: 0.6em;
-  border: 1px solid var(--accent);
-  display: flex;
-  flex-direction: column;
-}
-
-.project-info .project-stack {
-  margin-right: 1em;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: var(--bg);
-  padding: 0.1em 0.3em;
-  border-radius: 0.5em;
-}
-
-.project-card img {
-  height: 60%;
 }
