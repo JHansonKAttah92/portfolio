@@ -30,6 +30,7 @@ div#contact span {
     grid-area: name;
     padding: 0.4em;
     background-color: #fff;
+    color: var(--p-text);
     border: 1px solid #ccc;
 }
 
@@ -38,6 +39,7 @@ div#contact span {
     padding: 0.4em;
     background-color: #fff;
     border: 1px solid #ccc;
+    color: var(--p-text);
 }
 
 .action .textarea {
@@ -47,6 +49,7 @@ div#contact span {
     resize: vertical;
     background-color: #fff;
     border: 1px solid #ccc;
+    color: var(--p-text);
 }
 
 .action .btn {
@@ -56,10 +59,5 @@ div#contact span {
     border: none;
     border-radius: 0.4em;
     place-self: center;
-    background-color: var(--accent);
-}
-
-.action .btn:hover {
-    background-color: #1e40af;
-    cursor: pointer;
+    margin-top: var(--spacing-unit);
 }

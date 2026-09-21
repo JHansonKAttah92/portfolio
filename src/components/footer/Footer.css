@@ -1,0 +1,28 @@
+div#footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5em;
+  border-top: 1px solid var(--accent);
+}
+
+div#footer img {
+  height: 20px;
+}
+
+div#footer .footer-content {
+  width: 100%;
+  padding: 0 0.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content .social-icons {
+  display: flex;
+  gap: 1em;
+}
+
+.social-icons li {
+  list-style: none;
+}
