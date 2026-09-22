@@ -11,8 +11,12 @@ function Hero() {
           Currently open to new opportunities.
         </p>
         <div className="hero-buttons">
+        <a href="#projects">
           <button>View work</button>
+        </a>
+        <a href="#contact">
           <button>Contact me</button>
+        </a>
         </div>
       </div>
     </div>

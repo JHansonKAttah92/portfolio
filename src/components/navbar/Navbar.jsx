@@ -3,12 +3,10 @@ import "./Navbar.css";
 import { MenuIcon } from "lucide-react";
 
 function Navbar() {
-
-
   function scrollToSection(id) {
     const navbarLink = document.getElementById(id);
     if(navbarLink) {
-      navbarLink.scrollIntoView({ behavior: 'smooth' });
+      navbarLink.scrollIntoView();
     }
   }
 
@@ -49,10 +47,9 @@ function Navbar() {
             </li>
           </ul>
           <a
-            href="http://"
-            target="_blank"
+            href=''
             className="resume"
-            rel="noopener noreferrer"
+            download=''
           >
             My resume
           </a>

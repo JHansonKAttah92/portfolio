@@ -18,6 +18,11 @@ div#footer .footer-content {
   align-items: center;
 }
 
+ div.text h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
 .footer-content .social-icons {
   display: flex;
   gap: 1em;

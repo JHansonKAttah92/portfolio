@@ -5,6 +5,8 @@ div.nav-container {
   margin: 0.8em;
   padding: 0 0.8em;
   border-bottom: 1px solid var(--accent);
+  width: 90%;
+  filter: blur(1);
 }
 
 div.nav-container h2 {
