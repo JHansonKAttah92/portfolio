@@ -1,5 +1,6 @@
 //import { useState } from "react";
 import "./Navbar.css";
+import myResume from "../../assets/documents/Joshua_Hanson_Portfolio_Resume.pdf";
 import { MenuIcon } from "lucide-react";
 
 function Navbar() {
@@ -47,9 +48,9 @@ function Navbar() {
             </li>
           </ul>
           <a
-            href=''
+            href={myResume}
             className="resume"
-            download=''
+            download="Hanson_Resume.pdf"
           >
             My resume
           </a>
