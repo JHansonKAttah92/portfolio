@@ -29,7 +29,7 @@ div.hero-content {
   max-width: 600px;
 }
 
-.hero-content button {
+.hero-content .button {
   margin-top: 1em;
   padding: 0.8em 1.5em;
   font-size: 1em;
@@ -38,14 +38,15 @@ div.hero-content {
   background-color: var(--accent);
   border: none;
   border-radius: 4px;
+  text-decoration: none;
 }
 
-.hero-content button:hover {
+.hero-content .button:hover {
   background-color: #1e40af;
   cursor: pointer;
 }
 
-.hero-content button:active {
+.hero-content .button:active {
   background-color: #1e3a8a;
 }
 

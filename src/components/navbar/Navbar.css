@@ -28,13 +28,22 @@ ul.nav-menu li {
 }
 
 ul.nav-menu a {
+  color: var(--accent, #2563eb);
   text-decoration: underline;
   text-decoration-color: transparent;
-  transition: text-decoration-color 0.3s ease;
+  transition: text-decoration-color 0.3s;
 }
 
 ul.nav-menu a:hover {
   text-decoration-color: var(--accent);
+}
+
+ul.nav-menu a:active {
+  background-color: var(--accent, #2563eb);
+  color: #ffffff;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  transition: all 0.2s;
 }
 
 a.resume {

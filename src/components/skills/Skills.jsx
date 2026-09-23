@@ -35,6 +35,9 @@ function Skills() {
             </h2>
             <ul>
               <li className="skill-item">Git</li>
+              <li className="skill-item">Github</li>
+              <li className="skill-item">Vite</li>
+              <li className="skill-item">npm</li>
             </ul>
           </div>
         </div>

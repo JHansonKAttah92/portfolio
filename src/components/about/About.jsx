@@ -17,10 +17,7 @@ function About() {
         <div className="about-info">
           <h2>A bit about me</h2>
           <p>
-            I'm a full-stack developer with 4 years of experience building web
-            apps end to end. I care about clean code, fast interfaces, and
-            solving real problems for real users. Outside of work I contribute
-            to open source and write about frontend performance.
+            I'm a full-stack developer with 2 years of experience building responsive, functional and user-friendly websites and web applications. I work primarily with HTML, CSS, JavaScript, nodeJS and React, with practical experience in interactive interfaces, browser storage and API-based applications. My Computing background and teaching experience have strengthened my communication, organization and ability to explain requirements clearly.
           </p>
           <ul className="social-media">
             <li>
