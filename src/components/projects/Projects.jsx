@@ -29,7 +29,7 @@ function Projects() {
               />
             </a>
             <h3 className="project-title">Task Manager app</h3>
-            <p className="description">Kanban-style tool with drag and drop.</p>
+            <p className="description">A personal task-management application, centered on user input and persistent browser data.</p>
             <ul className="tech-stacks">
               <li className="tech-stack">HTML</li>
               <li className="tech-stack">CSS</li>
@@ -45,7 +45,7 @@ function Projects() {
               <img src={note} alt="Note App" className="project-img" />
             </a>
             <h3 className="project-title">Note app</h3>
-            <p className="description">Kanban-style tool with drag and drop.</p>
+            <p className="description">A browser-based notes application focused on creating, organizing and persisting user notes.</p>
             <ul className="tech-stacks">
               <li className="tech-stack">HTML</li>
               <li className="tech-stack">CSS</li>
@@ -65,7 +65,7 @@ function Projects() {
               />
             </a>
             <h3 className="project-title">Budget tracker app</h3>
-            <p className="description">Kanban-style tool with drag and drop.</p>
+            <p className="description">A personal budgeting application, centered on structured data entry and browser persistence.</p>
             <ul className="tech-stacks">
               <li className="tech-stack">HTML</li>
               <li className="tech-stack">CSS</li>
@@ -81,7 +81,7 @@ function Projects() {
               <img src={weather} alt="Weather App" className="project-img" />
             </a>
             <h3 className="project-title">Weather app</h3>
-            <p className="description">Kanban-style tool with drag and drop.</p>
+            <p className="description">A weather application focused on asynchronous data rendering.</p>
             <ul className="tech-stacks">
               <li className="tech-stack">HTML</li>
               <li className="tech-stack">CSS</li>
