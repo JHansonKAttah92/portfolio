@@ -10,21 +10,47 @@ div#skills {
 
 div#skills span {
   color: var(--accent);
+  margin-bottom: 1.2em;
 }
 
 .skills-content .skill-cards {
   display: flex;
-  gap: 10em;
+  gap: 3em;
 }
 
-.skill-cards ul {
+.skill-cards .skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  border-radius: var(--border-radius);
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.skill-card .skill-list {
   display: flex;
   gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-ul li.skill-item {
+.skill-list li.skill-item {
   list-style: none;
   padding: 0.3em;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0.6em;
+}
+
+@media screen and (max-width: 786px) {
+  div#skills {
+    align-items: center;
+  }
+  div#skills span {
+    place-self: flex-start;
+  }
+  .skills-content .skill-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

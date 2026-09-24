@@ -56,3 +56,27 @@ div.hero-content {
   margin-top: 1em;
   place-self: flex-start;
 }
+
+@media screen and (max-width: 786px) {
+  div.hero-content {
+    align-items: flex-start;
+  }
+  div.hero-content h1 {
+    font-size: 2rem;
+  }
+  div.hero-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .hero-content div.hero-buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+  .hero-content .button {
+    width: 70%;
+    text-align: center;
+  }
+}

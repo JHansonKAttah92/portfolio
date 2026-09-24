@@ -34,7 +34,7 @@ div.about-info {
 }
 
 div.about-info h2 {
-  place-self: flex-start;
+  text-align: left;
   font-size: 2em;
   color: var(--p-text);
 }
@@ -63,4 +63,17 @@ div.about-info a {
 div.about-info img {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  div#about {
+    align-items: center;
+  }
+  div.about-info h2 {
+    text-align: center;
+  }
+  div#about div.about-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

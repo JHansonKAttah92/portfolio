@@ -31,3 +31,9 @@ div#footer .footer-content {
 .social-icons li {
   list-style: none;
 }
+
+@media screen and (max-width: 786px) {
+  div#footer .footer-content {
+    flex-direction: column;
+  }
+}

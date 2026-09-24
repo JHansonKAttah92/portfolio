@@ -1,63 +1,80 @@
 div#contact {
-    display: flex;
-    flex-direction: column;
-    place-items: flex-start;
-    padding: 0 0.8em;
-    margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  place-items: flex-start;
+  padding: 0 0.8em;
+  margin-top: 5em;
 }
 
 div#contact span {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .contact-content h2 {
-    text-align: left;
+  text-align: left;
 }
 
 .contact-content p {
-    text-align: left;
+  text-align: left;
 }
 
 .contact-content .action {
-    display: grid;
-    gap: 0.2em;
-    grid-template-areas: 'name email'
-    'textarea textarea'
-    'btn btn';
+  display: grid;
+  gap: 0.2em;
+  grid-template-areas:
+    "name email"
+    "textarea textarea"
+    "btn btn";
 }
 
 .action .name {
-    grid-area: name;
-    padding: 0.4em;
-    background-color: #fff;
-    color: var(--p-text);
-    border: 1px solid #ccc;
+  grid-area: name;
+  padding: 0.4em;
+  background-color: #fff;
+  color: var(--p-text);
+  border: 1px solid #ccc;
 }
 
 .action .email {
-    grid-area: email;
-    padding: 0.4em;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    color: var(--p-text);
+  grid-area: email;
+  padding: 0.4em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: var(--p-text);
 }
 
 .action .textarea {
-    grid-area: textarea;
-    padding: 0.4em;
-    height: 5em;
-    resize: vertical;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    color: var(--p-text);
+  grid-area: textarea;
+  padding: 0.4em;
+  height: 5em;
+  resize: vertical;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: var(--p-text);
 }
 
 .action .btn {
-    grid-area: btn;
-    padding: 0.8em;
-    width: 20em;
-    border: none;
-    border-radius: 0.4em;
-    place-self: center;
-    margin-top: var(--spacing-unit);
+  grid-area: btn;
+  padding: 0.8em;
+  width: 20em;
+  border: none;
+  border-radius: 0.4em;
+  place-self: center;
+  margin-top: var(--spacing-unit);
+}
+
+@media screen and (max-width: 768px) {
+  div#contact {
+    align-items: center;
+  }
+  div#contact span {
+    place-self: flex-start;
+  }
+  .contact-content h2 {
+    text-align: center;
+  }
+  .contact-content .action {
+    display: flex;
+    flex-direction: column;
+  }
 }

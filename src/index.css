@@ -26,8 +26,7 @@ html {
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   min-height: 100svh;
@@ -46,13 +45,6 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/* Typography & Spacing */
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  line-height: 1.2;
 }
 
 p, ul, ol, figure {
@@ -92,4 +84,40 @@ button:active, .btn:active {
 button:focus-visible {
   outline: 2px solid var(--accent, #2563EB);
   outline-offset: 2px;
+}
+
+@media screen and (max-width: 480px) {
+  #root {
+    max-width: 480px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 1.25rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+h3 {
+  font-size: 1rem; 
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+button, .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+}
+
+@media screen and (max-width: 860px) {
+  #root {
+    max-width: 860px;
+  }
+  
 }

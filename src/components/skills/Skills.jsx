@@ -14,7 +14,7 @@ function Skills() {
               <CodeXml />
               Languages
             </h2>
-            <ul>
+            <ul className="skill-list">
               <li className="skill-item">JavaScript</li>
             </ul>
           </div>
@@ -23,7 +23,7 @@ function Skills() {
               <LayoutGrid />
               Frameworks
             </h2>
-            <ul>
+            <ul className="skill-list">
               <li className="skill-item">React</li>
               <li className="skill-item">Node.js</li>
             </ul>
@@ -33,7 +33,7 @@ function Skills() {
               <Wrench />
               Tools
             </h2>
-            <ul>
+            <ul className="skill-list">
               <li className="skill-item">Git</li>
               <li className="skill-item">Github</li>
               <li className="skill-item">Vite</li>
