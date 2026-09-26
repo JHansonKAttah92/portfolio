@@ -50,6 +50,7 @@ div#projects .projects-content {
     padding: 1em;
     border: 1px solid var(--border);
     border-radius: 1em;
+    max-height: fit-content;
 }
 
 .project-card:hover {
@@ -63,13 +64,33 @@ div#projects .projects-content {
 
 .project-cards .project-img {
     width: 100%;
-    height: 60%;
+    height: 50%;
     object-fit: contain;
 }
 
 .project-cards .tech-stacks {
     display: flex;
+    place-content: center;
+    list-style: none;
     gap: 1em;
+    padding: 0;
+}
+
+.project-action {
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.01em solid var(--border);
+    padding-top: 0.3em;
+}
+
+.project-action .action {
+    text-decoration: none;
+    color: var(--s-text);
+}
+
+.project-action .action:hover {
+color: rgba(0, 0, 0, 0.5);
+transition: all 0.3s;
 }
 
 .tech-stacks .tech-stack {
@@ -79,6 +100,11 @@ div#projects .projects-content {
     border-radius: 0.4em;
 }
 
+.project-action .action img {
+    height: 20px;
+    width: 20px;
+}
+
 @media screen and (max-width: 768px) {
     .projects-content .project-cards {
         display: flex;
@@ -86,5 +112,18 @@ div#projects .projects-content {
     }
     .project-cards .project-card {
         height: 400px;
+    }
+    .project-card h3 {
+        font-size: 1em;
+        margin: 0;
+    }
+    .project-card .description {
+        font-size: 0.7em;
+    }
+    .tech-stacks {
+        place-self: center;
+    }
+    .tech-stacks .tech-stack {
+        font-size: 0.7em;
     }
 }

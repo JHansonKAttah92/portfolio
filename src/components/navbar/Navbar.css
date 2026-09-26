@@ -1,11 +1,7 @@
-.navbar {
-  height: 8vh;
-}
 div.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 1px solid var(--border);
   backdrop-filter: blur(10px);
   position: fixed;
   background-color: rgba(255, 255, 255, 0.8);
@@ -91,22 +87,42 @@ a.resume:hover {
 
 @media screen and (max-width: 768px) {
   div.nav-container {
+    flex-direction: column;
     justify-content: space-between;
+    gap: 0;
   }
   div.nav-container h2 {
     font-size: 24px;
   }
   div.nav-container .links{
+    width: fit-content;
     flex-direction: column;
     align-items: flex-end;
+    place-self: flex-start;
     gap: 0;
+    margin-bottom: 0.2em;
+    display: flex;
+    opacity: 1;
+    transition: display 0.5s allow-discrete, opacity 0.5s;
+    
+  }
+  @starting-style {
+    div.nav-container .links {
+      opacity: 0;
+    }
+  }
+  div.nav-container .links.active {
     display: none;
+    opacity: 0;
   }
   div.nav-container ul {
     flex-direction: column;
     gap: 0.5em;
     padding-right: 2.3em;
     place-self: center;
+  }
+  ul.nav-menu {
+    margin-top: 0;
   }
   a.resume {
     width: 70%;
@@ -116,5 +132,14 @@ a.resume:hover {
   }
   .menuIcon {
     display: block;
+    place-self: flex-end;
+    position: absolute;
+    top: 20px;
+    z-index: 1000;
+  }
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #2563eb;
   }
 }

@@ -3,6 +3,8 @@ import taskManager from "../../assets/images/task-manager.png";
 import budgetTracker from "../../assets/images/budget-tracker.png";
 import note from "../../assets/images/note.png";
 import weather from "../../assets/images/weather.png";
+import gitHub from "../../assets/icons/github-light.svg";
+import { Cast } from "lucide-react";
 
 function Projects() {
   return (
@@ -17,76 +19,143 @@ function Projects() {
         </div>
         <div className="project-cards">
           <div className="project-card">
-            <a
-              href="https://task-management-system-coral-ten.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={taskManager}
-                alt="Task Manager App"
-                className="project-img"
-              />
-            </a>
+            <img
+              src={taskManager}
+              alt="Task Manager App"
+              className="project-img"
+            />
             <h3 className="project-title">Task Manager app</h3>
-            <p className="description">A personal task-management application, centered on user input and persistent browser data.</p>
+            <p className="description">
+              A personal task-management application, centered on user input and
+              persistent browser data.
+            </p>
             <ul className="tech-stacks">
               <li className="tech-stack">HTML</li>
               <li className="tech-stack">CSS</li>
               <li className="tech-stack">JavaScript</li>
             </ul>
+            <div className="project-action">
+              <a
+                className="action"
+                href="https://task-management-system-coral-ten.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Cast />
+                Live Demo
+              </a>
+              <a
+                className="action"
+                href="Task manager source code"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={gitHub} className="project-img" />
+                Source Code
+              </a>
+            </div>
           </div>
           <div className="project-card">
-            <a
-              href="https://note-app-nine-fawn.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={note} alt="Note App" className="project-img" />
-            </a>
+            <img src={note} alt="Note App" className="project-img" />
             <h3 className="project-title">Note app</h3>
-            <p className="description">A browser-based notes application focused on creating, organizing and persisting user notes.</p>
+            <p className="description">
+              A browser-based notes application focused on creating, organizing
+              and persisting user notes.
+            </p>
             <ul className="tech-stacks">
               <li className="tech-stack">HTML</li>
               <li className="tech-stack">CSS</li>
               <li className="tech-stack">JavaScript</li>
             </ul>
+            <div className="project-action">
+              <a
+                className="action"
+                href="https://note-app-nine-fawn.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Cast />
+                Live Demo
+              </a>
+              <a
+                className="action"
+                href="note app source code"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={gitHub} className="project-img" />
+                Source Code
+              </a>
+            </div>
           </div>
           <div className="project-card">
-            <a
-              href="https://budget-tracker-tan-mu.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               <img
                 src={budgetTracker}
                 alt="Budget Tracker App"
                 className="project-img"
               />
-            </a>
             <h3 className="project-title">Budget tracker app</h3>
-            <p className="description">A personal budgeting application, centered on structured data entry and browser persistence.</p>
+            <p className="description">
+              A personal budgeting application, centered on structured data
+              entry and browser persistence.
+            </p>
             <ul className="tech-stacks">
               <li className="tech-stack">HTML</li>
               <li className="tech-stack">CSS</li>
               <li className="tech-stack">JavaScript</li>
             </ul>
+            <div className="project-action">
+              <a
+                className="action"
+                href="https://budget-tracker-tan-mu.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Cast />
+                Live Demo
+              </a>
+              <a
+                className="action"
+                href="Budget tracker source code"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={gitHub} className="project-img" />
+                Source Code
+              </a>
+            </div>
           </div>
           <div className="project-card">
-            <a
-              href="https://weather-app-five-orcin-38.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               <img src={weather} alt="Weather App" className="project-img" />
-            </a>
             <h3 className="project-title">Weather app</h3>
-            <p className="description">A weather application focused on asynchronous data rendering.</p>
+            <p className="description">
+              A weather application focused on asynchronous data rendering.
+            </p>
             <ul className="tech-stacks">
               <li className="tech-stack">HTML</li>
               <li className="tech-stack">CSS</li>
               <li className="tech-stack">JavaScript</li>
             </ul>
+            <div className="project-action">
+              <a
+                className="action"
+                href="https://weather-app-five-orcin-38.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Cast />
+                Live Demo
+              </a>
+              <a
+                className="action"
+                href="Weather source code"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={gitHub} className="project-img" />
+                Source Code
+              </a>
+            </div>
           </div>
         </div>
       </div>

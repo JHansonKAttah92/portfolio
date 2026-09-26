@@ -47,7 +47,7 @@ div.about-info ul {
   display: flex;
   align-items: baseline;
   gap: 1em;
-  transform: translateX(-4.5%);
+  padding-left: 0;
 }
 
 div.about-info li {
@@ -71,6 +71,10 @@ div.about-info img {
   }
   div.about-info h2 {
     text-align: center;
+    font-size: 1.5em;
+  }
+  div.about-info p {
+    font-size: 0.9em
   }
   div#about div.about-content {
     flex-direction: column;

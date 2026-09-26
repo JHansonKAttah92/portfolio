@@ -1,17 +1,20 @@
 //import { useState } from "react";
 import "./Navbar.css";
 import myResume from "../../assets/documents/Joshua_Hanson_Portfolio_Resume.pdf";
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 import { useState } from "react";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(true);
 
-  const toggleMenu = (e) => {
-    if (e.target.matches(".menuIcon")) {
-      setIsMenuOpen(!isMenuOpen);
+  const handleMenu = (e) => {
+    if(e.target.matches('.menuIcon')) {
+      setOpenMenu(!openMenu);
     }
-  };
+  }
+
+  const menu = `links && ${openMenu ? 'active' : ''}`;
+  const closeMenu = () => setOpenMenu(true);
 
   function scrollToSection(id) {
     const navbarLink = document.getElementById(id);
@@ -20,6 +23,8 @@ function Navbar() {
     }
   }
 
+  const scrollToLink = () => scrollToSection();
+
   return (
     <nav className="navbar">
       <div className="nav-container">
@@ -27,25 +32,36 @@ function Navbar() {
           <a
             href="#hero"
             className="logo-link"
-            onClick={() => scrollToSection("hero")}
+            onClick={() => scrollToLink("hero")}
           >
             Hanson.Dev
           </a>
         </h2>
-        <MenuIcon
+        <span className="line"></span>
+        {
+          openMenu ? <MenuIcon
           className="menuIcon"
           size={36}
           color="#2563EB"
           strokeWidth={1}
-          onClick={toggleMenu}
+          onClick={handleMenu}
+        /> : <X
+          className="menuIcon"
+          size={36}
+          color="#2563EB"
+          strokeWidth={1}
+          onClick={handleMenu}
         />
-        <div className="links">
+        }
+        
+        <div className={menu}>
           <ul className="nav-menu">
             <li className="nav-item">
               <a
                 href="#about"
                 className="nav-link"
                 onClick={() => scrollToSection("about")}
+                onClick={closeMenu}
               >
                 About
               </a>
@@ -55,6 +71,7 @@ function Navbar() {
                 href="#skills"
                 className="nav-link"
                 onClick={() => scrollToSection("skills")}
+                onClick={closeMenu}
               >
                 Skills
               </a>
@@ -64,6 +81,7 @@ function Navbar() {
                 href="#projects"
                 className="nav-link"
                 onClick={() => scrollToSection("projects")}
+                onClick={closeMenu}
               >
                 Projects
               </a>
@@ -73,12 +91,13 @@ function Navbar() {
                 href="#contact"
                 className="nav-link"
                 onClick={() => scrollToSection("contact")}
+                onClick={closeMenu}
               >
                 Contact
               </a>
             </li>
           </ul>
-          <a href={myResume} className="resume" download="Hanson_Resume.pdf">
+          <a href={myResume} className="resume" aria-label="Download Resume" download="Hanson_Resume.pdf">
             My resume
           </a>
         </div>
