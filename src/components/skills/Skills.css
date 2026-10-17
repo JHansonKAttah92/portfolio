@@ -8,6 +8,10 @@ div#skills {
   flex-direction: column;
 }
 
+div#skills .skills-content {
+  width: 100%;
+}
+
 div#skills span {
   color: var(--accent);
   margin-bottom: 1.2em;
@@ -15,6 +19,7 @@ div#skills span {
 
 .skills-content .skill-cards {
   display: flex;
+  width: 100%;
   gap: 3em;
 }
 

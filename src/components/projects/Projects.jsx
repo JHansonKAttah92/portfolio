@@ -46,7 +46,7 @@ function Projects() {
               </a>
               <a
                 className="action"
-                href="Task manager source code"
+                href="https://github.com/JHansonKAttah92/Task-Management-System/blob/main/app.js"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -79,7 +79,7 @@ function Projects() {
               </a>
               <a
                 className="action"
-                href="note app source code"
+                href="https://github.com/JHansonKAttah92/note-app/blob/main/app.js"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -89,11 +89,11 @@ function Projects() {
             </div>
           </div>
           <div className="project-card">
-              <img
-                src={budgetTracker}
-                alt="Budget Tracker App"
-                className="project-img"
-              />
+            <img
+              src={budgetTracker}
+              alt="Budget Tracker App"
+              className="project-img"
+            />
             <h3 className="project-title">Budget tracker app</h3>
             <p className="description">
               A personal budgeting application, centered on structured data
@@ -116,7 +116,7 @@ function Projects() {
               </a>
               <a
                 className="action"
-                href="Budget tracker source code"
+                href="https://github.com/JHansonKAttah92/budget-tracker/blob/main/app.js"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -126,7 +126,7 @@ function Projects() {
             </div>
           </div>
           <div className="project-card">
-              <img src={weather} alt="Weather App" className="project-img" />
+            <img src={weather} alt="Weather App" className="project-img" />
             <h3 className="project-title">Weather app</h3>
             <p className="description">
               A weather application focused on asynchronous data rendering.
@@ -148,7 +148,7 @@ function Projects() {
               </a>
               <a
                 className="action"
-                href="Weather source code"
+                href="https://github.com/JHansonKAttah92/Weather-App/blob/main/app.js"
                 target="_blank"
                 rel="noopener noreferrer"
               >
